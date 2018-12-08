@@ -5,32 +5,40 @@
 * A BCURRAN3 original!
 * I personally use and endorse this extension.
 
-**chocolatey-misc-helpers.extension** provides helper functions to be used in Chocolatey install/uninstall scripts by package creators/maintainers. 
+##**chocolatey-misc-helpers.extension** provides helper functions to be used in Chocolatey install/uninstall scripts by package creators/maintainers.
 
 These didn't fit into the concept scope of my other extensions so I decided to start a new miscellaneous collection and will add to it as "needed."
 
 ###HELPERS:
-* **Start-CheckandStop** - Checks for and stops a process if running. Creates variables to easily restart the process after a package upgrade. Useful for installers that fail if the program is running, i.e. KeePass, uTorrent, etc. or for stopping programs that automatically run after install, i.e. Skype, SuMo, Ellp, etc. as well as for programs that will stop running during an upgrade and then not return to a running state post upgrade, i.e. Plex Media Server, etc.
-* **Show-ToastMessage** - Displays a Windows [toast](https://en.wikipedia.org/wiki/Windows_Push_Notification_Service) message, you can send two lines. (Currently requires [BurntToast PS module](https://github.com/Windos/BurntToast) pre-installed.) [SCREENSHOT](https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension/chocolatey-misc-helpers.extension_screenshot.png)
-* **Start-WaitandStop** - starts a background process to stop a (foreground) process - quits after 5 minutes or after the process gets stopped. Useful to stop additional pop-up programs during installation. 
-* **Start-WaitandStopActual** - (do not directly use) called by Start-WaitandStop to make Start-WaitandStop simple to use.
+* **Enable-AutoPin** - Auto-pins a package during installation. (This has an unknown shelf life.) [Screenshot](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension_extras/Enable-AutoPin_screenshot.png)
+* **Start-CheckandStop** - Checks for and stops a process if running. Creates variables to easily restart the process after a package upgrade. Useful for installers that fail if the program is running, i.e. KeePass, uTorrent, etc. or for stopping programs that automatically run after install, i.e. Skype, SuMo, Ellp, etc. as well as for programs that will stop running during an upgrade and then not return to a running state post upgrade, i.e. Plex Media Server, etc. [Screenshot](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension_extras/chocolatey-misc-helpers.extension_screenshot.png)
+* **Start-CheckandThrow** - Checks if a process is running and aborts installation/upgrade if so. [Screenshot](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension_extras/chocolatey-misc-helpers.extension_screenshot.png)
+* **Start-WaitandStop** - Starts a background process to stop a (foreground) process - quits after 5 minutes or after the process gets stopped. Useful to stop additional pop-up programs during installation. [Screenshot](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension_extras/chocolatey-misc-helpers.extension_screenshot.png)
+* **Start-WaitandStopActual** - (do not directly use) Called by Start-WaitandStop to make Start-WaitandStop simple to use.
+* **Test-Dependency** - Provides a way to verify a dependency is installed. Does NOT check version. Returns True/False. [Screenshot](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-misc-helpers.extension_extras/Test-Dependency_screenshot.png)
 * **Read comments in the scripts for help implementing.**
 
+###USAGE:
+* Enable-AutoPin
+* Start-CheckandStop "ProcessName"
+* Start-CheckandThrow "ProcessName"
+* Start-WaitandStop "ProcessName"
+* Test-Dependency "DependencyPackageName"
+
+###CHANGE LOG:
+* 0.0.3 - Added Enable-AutoPin, Start-CheckandThrow, and Test-Dependency. Minor cosmetic changes.
+* 0.0.2 - Show-Patreon, Show-PayPal, and Show-ToastMessage added but later disapproved by the Chocolatey team and thus nullified. :(
+* 0.0.1 - initial release
+
 ***
-DO NOT USE: Added but later nullified. Inclusion for backward compatibility with pre-release versions in the wild.
+###DO NOT USE: 
+The functions below were added to v0.0.2 but were later nullified; included for backward compatibility with pre-release versions in the wild. Any questions, look at the comments in the files.
+
 * **Show-Patreon** - Displays a message and link to your [Patreon](https://www.patreon.com/) website.
 * **Show-PayPal** - Displays a message and link to your [PayPal](https://www.paypal.com/) website.
+* **Show-ToastMessage** - Displays a Windows [toast](https://en.wikipedia.org/wiki/Windows_Push_Notification_Service) message, you can send two lines. This has been recycled and made into [chocolatey-toast-notifications.extension](https://chocolatey.org/packages/chocolatey-toast-notifications.extension).
+
 ***
-
-###USAGE:
-* Show-ToastMessage "Your message line 1" "Your message line 2"
-* Start-CheckandStop "ProcessName"
-* Start-WaitandStop "ProcessName"
-
-CHANGE LOG:
-###CHANGE LOG:
-* 0.0.2 - Show-ToastMessage added (neutered from original form), Show-Patreon and Show-PayPal added but disapproved by the Chocolatey team and thus nullified. :(
-* 0.0.1 - initial release
 
 ***
 
@@ -51,7 +59,3 @@ If applicable, please always consider donating or purchasing the software you in
 <h3>TIA,</h3>
 
 <h3>Bill</h3>
-
-
-
-

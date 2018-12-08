@@ -5,7 +5,7 @@
 * A BCURRAN3 original!
 * I personally use and endorse this extension.
 
-![Screenshot of Chocolatey Toast Notifications Extension](https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/chocolatey-toast-notifications.extension/chocolatey-toast-notifications.extension_screenshot.png)
+![Screenshot of Chocolatey Toast Notifications Extension](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/chocolatey-toast-notifications.extension_extras/chocolatey-toast-notifications.extension_screenshot.png)
 
 ###It's HERE! The 100% Chocolatey user OPT-IN toast notification extension for Chocolatey and Windows 10 (only).
 
@@ -21,7 +21,7 @@
 ###WHAT IT WON'T DO:
 * **Chocolatey Toast Notifications Extension** will NOT work on anything other than Windows 10, this is a limitation of the [BurntToast](https://github.com/Windos/BurntToast) PowerShell module and its use of the [UWP Community Toolkit](https://github.com/Microsoft/WindowsCommunityToolkit). (Yes, I tried it on Windows Server 2016 and it did NOT work.)
 * **Chocolatey Toast Notifications Extension** will NOT display messages for programs that don't use standard installers, i.e. portable programs.
-* **Chocolatey Toast Notifications Extension** will NOT display messages for programs installed/uninstalled via any background processes; i.e. my **[choco-upgrade-all-at-startup](https://chocolatey.org/packages/choco-upgrade-all-at-startup)**, **[choco-upgrade-all-at](https://chocolatey.org/packages/choco-upgrade-all-at)**, and **[choco-persistent-packages](https://chocolatey.org/packages/choco-persistent-packages)** packages.
+* **Chocolatey Toast Notifications Extension** will NOT display messages for programs installed/uninstalled via any background processes; i.e. my **[choco-upgrade-all-at-startup](https://chocolatey.org/packages/choco-upgrade-all-at-startup)**, **[choco-upgrade-all-at](https://chocolatey.org/packages/choco-upgrade-all-at)**, and **[choco-persistent-packages](https://chocolatey.org/packages/choco-persistent-packages)** packages... YET!
 
 **[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/chocolatey-toast-notifications.extension/readme.md)**
 
@@ -30,13 +30,14 @@
 ***
 
 ###CHANGE LOG:
-* 0.0.1   - initial release
+* 0.0.3 - Notifications will now display in the foreground when sent from a background task using the system account but minus the web page link button.
+* 0.0.2 - baked in compatibility with [chocolatey-preinstaller-checks.extension](https://chocolatey.org/packages/chocolatey-preinstaller-checks.extension) if installed
+* 0.0.1 - initial release
 
 ###ROADMAP:
-* Make it Windows 8 compatible after packaging up an old version of [BurntToast](https://github.com/Windos/BurntToast)
+* Possibly make it Windows 8 compatible after packaging up an old version of [BurntToast](https://github.com/Windos/BurntToast)
 * Possibly make it Windows Server 2016 compatible.
 * Attempt to make it work with PORTABLE packages as well.
-* Add global logged in user notifications if [BurntToast](https://github.com/Windos/BurntToast) and the [UWP Community Toolkit](https://github.com/Microsoft/WindowsCommunityToolkit) provide the functionality.
 
 ***
 

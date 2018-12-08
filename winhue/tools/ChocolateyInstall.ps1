@@ -1,17 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'winhue'
 $installerType  = 'EXE'
-$url            = 'https://github.com/Hyrules/WinHue3/releases/download/RC5_3/WinHue.3.0.2128.0.Setup.exe' 
-$checksum       = '1B17E738BEE241E336CF21EAFBD94013E9D1089B1BB6BD42550AF1E65C26A171'
-$silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$validExitCodes = @(0)
+$url            = 'https://github.com/Hyrules/WinHue3/releases/download/1.0/WinHue.3.0.3028.0.Setup.exe' 
+$checksum       = '963183653C507246DD87DEB8623DAB5EAB9980E42547EC524BC0BFC8100604F2'
 
 $packageArgs = @{
   packageName   = $packageName
   fileType      = 'EXE' 
   url           = $url
-  silentArgs    = $silentArgs  
-  validExitCodes= $validExitCodes
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  validExitCodes= @(0)
   softwareName  = 'WinHue*'
   checksum      = $checksum
   checksumType  = 'sha256'   
