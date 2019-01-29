@@ -1,7 +1,7 @@
 ﻿$packageName   = 'windows-iso-downloader' 
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url           = 'https://www.heidoc.net/php/Windows%20ISO%20Downloader.exe'
-$checksum      = 'EB7FC232D8F1FDEB1D34A5951BCCB16C2026807239E5E8C3F23230CD7EC383C5'
+$checksum      = '5F13A7CC0BAFE6268CF55551A7D05239EACEF33923C28A5C815CF5714EEBCE45'
 $ExeFile       = 'Windows ISO Downloader.exe'
 $ShortcutName  = 'Microsoft Windows and Office ISO Download Tool.lnk'
 

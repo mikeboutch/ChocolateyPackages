@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/InstChoco/InstChoco_icon.png" width="139" height="88">
+<img src="https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/mylogos/myunofficialChocolateylogo_icon.png" width="139" height="88">
 
 ![Screenshot of Choco-Cleaner](https://cdn.rawgit.com/bcurran3/ChocolateyPackages/bd713cc4/choco-cleaner/choco-cleaner_screenshot.png)	
 
@@ -15,7 +15,7 @@
 ####This package creates a Windows Scheduled Task to run Choco-Cleaner.ps1 every Sunday at 11:00 PM.
 
 ##**BEFORE and AFTER Choco-Cleaner: (198 packages installed and does not include temp folder deletions.)**
-![schreenshot of files and diskspace  before Choco-Cleaner](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/choco-cleaner/choco-cleaner_before.png) ![schreenshot of files and diskspace after choco-cleaner](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/choco-cleaner/choco-cleaner_after.png)
+![schreenshot of files and diskspace  before Choco-Cleaner](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/choco-cleaner/choco-cleaner_before.png) ![schreenshot of files and diskspace after choco-cleaner](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/choco-cleaner/choco-cleaner_after.png)
 
 **Sure, you're probably not going to get gigabytes of space back, but every few KB matters on some computers and to some people! Due to [slack space](https://www.computerhope.com/jargon/s/slack-space.htm) small files such as 6 byte .ignore files actually take up 4 KB of HDD space each.**
 
@@ -61,6 +61,8 @@ If you have a previous release of **Choco-Cleaner** installed, upgrading to a ne
 **Organizations with software license compliance auditing should probably NOT delete the license and verification files for legal protection. The supplied configuration file defaults to false for these types of files. As ferventcoder/Rob has said many times, corporations are not advised to use the community repository and should be using [Chocolatey for Business](https://chocolatey.org/pricing) with their own internalized local packages.**
 
 CHANGELOG:
+* 0.0.5.2 - minor update to delete .img (alternate .iso name), and .msi,.msu, and .msp files in toolsDir, as well as minor cosmetic changes
+* 0.0.5.1 - made PowerShell Core compatible
 * 0.0.5 - added deletion of cacheLocation if defined in chocolatey.config, cosmetic changes, removed 7Zip dependency and now using the version of 7Zip packaged with Chocolatey.
 * 0.0.4 - added deletion of Nuget Cache folder files
 * 0.0.3.1 - fixed typo causing nupkg files to NOT be optimized - thanks E.R.! 

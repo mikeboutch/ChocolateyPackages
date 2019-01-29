@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>intel-dsa</id>
-    <version>3.6.1.4</version>
+    <version>3.7.0.8</version>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/intel-dsa</packageSourceUrl>		
     <owners>bcurran3</owners>
     <title>Intel® Driver &amp; Support Assistant (Install)</title>
     <authors>Intel Corporation</authors>
     <projectUrl>https://downloadcenter.intel.com/download/24345/Intel-Driver-Support-Assistant</projectUrl>
-    <iconUrl>https://www-ssl.intel.com/sites/sitewide/HAT/50recode/pix/main-logo.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/intel-dsa/intel-dsa_icon.png</iconUrl>
     <copyright>Intel Corporation</copyright>
     <licenseUrl>http://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,6 +18,10 @@
     <tags>dsa intel driver support assistant update utility</tags>
     <summary>Launch the Intel® Driver Update Utility to find the latest drivers.</summary>
     <description>
+***	
+[choco://intel-dsa](choco://intel-dsa)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+***
 
 ###Purpose
 
@@ -41,7 +45,7 @@ This application does not support older versions of Internet Explorer. We recomm
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
 ***	
 </description>
-    <releaseNotes>https://downloadcenter.intel.com/download/24345/Intel-Driver-Support-Assistant</releaseNotes>
+    <releaseNotes>https://downloadcenter.intel.com/download/28425/Intel-Driver-Support-Assistant?v=t</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
     </dependencies>		

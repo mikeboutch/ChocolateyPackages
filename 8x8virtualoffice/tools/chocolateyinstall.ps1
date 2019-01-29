@@ -1,7 +1,7 @@
 ﻿$packageName    = '8x8virtualoffice'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://support.8x8.com/@api/deki/files/1947/VOD_5_8_0_20403.msi' 
-$checksum       = 'BF60DB11FB2663279ACFFCAFEFF35E872ED8D0CD7917C7BDE8984316CDA2C8CF'
+$url            = 'https://support.8x8.com/@api/deki/files/1947/VOD_5_9_0_20527.msi' 
+$checksum       = 'F6C2D3555834A41BB566D92297009589F28D71B0897B250F15C559EE570672A6'
 
 $packageArgs = @{
   packageName    = $packageName

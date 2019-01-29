@@ -1,7 +1,7 @@
 ﻿$packageName = 'kmttg' 
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url         = 'https://downloads.sourceforge.net/project/kmttg/kmttg_v2.4h.zip'
-$checksum    = 'C5F5C3B05E53CF13BC61AFF10D8182E02B0814D56C21F0C585A0B107F05417EE'
+$url         = 'https://downloads.sourceforge.net/project/kmttg/kmttg_v2.4l.zip'
+$checksum    = '76B0C6BF7A2CE6163CD4379CD16503B53C6A9EA2D2DBA01C3811142A6256246B'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -19,3 +19,4 @@ Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows
 
 $WhoAmI=whoami
 icacls.exe $toolsDir /grant $WhoAmI":"'(OI)(CI)'F /T | out-null
+

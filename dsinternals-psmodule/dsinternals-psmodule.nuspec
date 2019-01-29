@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dsinternals-psmodule</id>
-    <version>2.23</version>
+    <version>3.1</version>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/dsinternals-psmodule</packageSourceUrl>
     <owners>bcuran3</owners>
     <title>DSInternals (Install)</title>
     <authors>Michael Grafnetter</authors>
     <projectUrl>https://www.powershellgallery.com/packages/DSInternals</projectUrl>
-    <iconUrl>https://www.powershellgallery.com/Content/Images/PackageDefaultIcon.png</iconUrl>	
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/mylogos/powershell_icon.png</iconUrl>	
     <copyright>(c) Michael Grafnetter. All rights reserved.</copyright>
     <licenseUrl>https://github.com/MichaelGrafnetter/DSInternals/commit/ff80b8c710f6a4a01f94542f0993b555bce5f7f1</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

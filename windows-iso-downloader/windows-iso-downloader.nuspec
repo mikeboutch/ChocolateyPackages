@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windows-iso-downloader</id>
-    <version>7.11</version>
+    <version>7.35</version>
     <owners>bcurran3</owners>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/windows-iso-downloader</packageSourceUrl>
     <title>Microsoft Windows and Office ISO Download Tool (Portable)</title>
     <authors>Jan Krohn</authors>
     <projectUrl>https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/windows-iso-downloader/windows-iso-downloader_icon.png</iconUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/windows-iso-downloader/windows-iso-downloader_icon.png</iconUrl>
     <copyright>Copyright © HeiDoc.net</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <mailingListUrl>https://heidoc.net/mailman/listinfo/win-iso_heidoc.net</mailingListUrl>
@@ -17,9 +17,14 @@
     <tags>microsoft windows office iso admin</tags>
     <summary>Easily download Windows and Office disk images</summary>
     <description>
+***	
+[choco://windows-iso-downloader](choco://windows-iso-downloader)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+***
+	
 ![screenshot of Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/images/microsoft/win-downloader.png)
 
-This tool allows an easy and comfortable way to download genuine Windows 7, Windows 8.1 and Windows 10 disk images (ISO) directly from Microsoft's servers, as well as Office 2010, Office 2013, Office 2016, Expression Studio and Office for Mac.
+This tool allows an easy and comfortable way to download genuine Windows 7, Windows 8.1 and Windows 10 disk images (ISO) directly from Microsoft's servers, as well as Office 2010, Office 2013, Office 2016, Office 2019, Expression Studio and Office for Mac.
 
 In the past, Microsoft provided disk images for many of their products through their subcontractor "Digital River". These downloads were pulled in early 2014. Afterwards, Microsoft made a limited selection of downloads available on their TechBench site. Our tool is based on TechBench, and makes a range of hidden products available for download.
 
